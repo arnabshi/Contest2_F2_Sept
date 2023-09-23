@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="section">
+      <nav class="navbar">
+        <div class="nav-center">
+          <p>Student portal</p>
+        </div>
+      </nav>
+
+      <form class="form-container" id="form">
+        <input type="text" name="search" id="search" placeholder="Search" />
+        <button class="submit-btn btn" type="submit">search</button>
+      </form>
+
+      <div class="sort-section">
+        <button class="btn" id="sortAtoZ">Sort A-Z</button>
+        <button class="btn" id="sortZtoA">Sort Z-A</button>
+        <button class="btn" id="sortByMarks">Sort by marks</button>
+        <button class="btn" id="sortByPassing">Sort by passing</button>
+        <button class="btn" id="sortByClass">Sort by class</button>
+        <button class="btn" id="sortByGender">Sort by gender</button>
+      </div>
+
+  
+<table border="1" id="all_students">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>name</th>
+      <th>gender</th>
+      <th>class</th>
+      <th>marks</th>
+      <th>passing</th>
+      <th>email</th>
+    </tr>
+  </thead>
+  <tbody class="table-data">
+   
+  </tbody>
+</table>
+  
+<table border="1" class="female-table table-none" id="female">
+  <caption>Female Student's Table</caption>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>name</th>
+      <th>gender</th>
+      <th>class</th>
+      <th>marks</th>
+      <th>passing</th>
+      <th>email</th>
+    </tr>
+  </thead>
+  <tbody class="table-female-data">
+   
+  </tbody>
+</table>
+  
+<table border="1" class="maleTable table-none" id="male">
+   <caption>Male Student's Table</caption>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>name</th>
+      <th>gender</th>
+      <th>class</th>
+      <th>marks</th>
+      <th>passing</th>
+      <th>email</th>
+    </tr>
+  </thead>
+  <tbody class="table-male-data">
+   
+  </tbody>
+</table>
+
+    </section>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
